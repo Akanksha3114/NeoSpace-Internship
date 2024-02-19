@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tem.css">
+    <title>Temperature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header>
+        <div class="head">Temperature converter</div>
+    </header>
+<div class="bound">
+    <div class="converter">
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" placeholder="Enter temperature" oninput="validateInput()">
+    </div>
+
+    <div class="unit">
+        <label for="unit">Unit:</label>
+        <select id="unit">
+            <option value="select">Select</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button onclick="convertTemperature()" class="button" role="button">CONVERT</button>
+    </div>
+
+    <div id="result"></div>
+</div>
+    <script src="tem.js"></script>
+
+</body>
+
+</html>
